@@ -1,0 +1,97 @@
+/**  Defaul css styles for header and footer for entire website */
+
+/** header css style rules */ 
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#logo-sec{
+    min-height: 60px;
+    width: 100%;
+    margin-top : 5px;
+    background-color: #0066ff;
+    margin-top : -4px;
+}
+
+.logo{
+    font-size: 20px;
+    font-family: 'Tangerine', serif;
+    color: #ffffff;
+}
+
+.container{
+ margin: 5px auto;
+ width : 80%;
+ overflow: hidden;
+}
+
+.h1-size{
+    padding: 0;
+    margin: 0;
+}
+
+header .logo{
+    float: left;
+}
+
+header .nav-links{
+    float : right;
+}
+
+header .nav-links ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+header .nav-links li{
+    float: left;
+}
+
+header .nav-links li a{
+    display: block;
+    font-family: 'ABeeZee' , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+header .nav-links li a:hover {
+    display: block;
+    font-family: 'ABeeZee' , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60px;
+    color: #0066ff;
+    background-color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+
+@media(max-width : 768px){
+    header .logo, header .nav-links{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/** footer styles */
+
+footer{
+    background-color :#0066ff;
+    color: #fff;
+    min-height: 50px;
+}
+
+footer p{
+    text-align: center;
+    padding : 9px;
+    font-family: 'ABeeZee' , 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
