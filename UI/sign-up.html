@@ -20,7 +20,6 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sign-up.html">Sign Up</a></li>
                     <li><a href="login.html">Login</a></li>
-                    <li><a href="about.html">About</a></li>
                </ul> 
              </div>
            </div>
@@ -28,12 +27,11 @@
         
         <section class="form-contents">
                 <h1>Sign-up For a Free Account</h1>
-                <form class="form-css" method="post">
+                <form class="form-css" method="post" id="form">
                     <input type="text" id="fName" name="fName" placeholder="First Name">
                     <input type="text" id="lName" name="lName" placeholder="Last Name">
                     <input type="email" id="email" name="email" placeholder="Email Address">
                     <input type="number" id="number" name="number" placeholder="Phone Number">
-                    <input type="text" id="country" name="country" placeholder="Country">
                     <input type="password" id="password" name="password" placeholder="PassWord">
                     <input type="password" id="cPassword" name="cPassword" placeholder="Confirm Password">
                     <br> <br>
@@ -49,5 +47,33 @@
         <footer>
             <p> SendIt &copy copyright 2019</p>
         </footer>
+
+  <script>
+
+      let frm = document.getElementById("form");
+
+       frm.onsubmit = function(){
+
+         let Fname = document.getElementById("fName").value;
+         let Lname = document.getElementById("lName").value;
+         let Email = document.getElementById("email").value;
+         let Numba = document.getElementById("number").value;
+         let varPassword = document.getElementById("password").value;
+         let varCPassword = document.getElementById("cPassword").value;
+
+        if(Fname === "" || Lname === "" || Email === "" || Numba === "" || varPassword === "" || varCPassword === ""){
+            alert("One or More of your input is empty, Please enter a valid input");
+            return false;
+        }
+        
+        if(varPassword !== varCPassword){
+            alert("Your Password and Confirm Password are not the same, Please re-type password");
+            return false;
+        }
+
+       }
+         
+         
+</Script>
 </body>
 </html>

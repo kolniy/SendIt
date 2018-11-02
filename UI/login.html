@@ -20,7 +20,6 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="sign-up.html">Sign Up</a></li>
                     <li><a href="login.html">Login</a></li>
-                    <li><a href="about.html">About</a></li>
                </ul> 
              </div>
            </div>
@@ -28,7 +27,7 @@
         
         <section class="form-contents">
                 <h1>Login</h1>
-                <form class="form-css" method="post">
+                <form class="form-css" method="post" id = "form">
                     <input type="email" id="email" name="email" placeholder="Email Address">
                     <input type="password" id="password" name="password" placeholder="Password">
                     <input type="submit" value="Submit" id="submit">
@@ -42,6 +41,19 @@
             <p> SendIt &copy copyright 2019</p>
         </footer>
 
+        <script>
+        
+            let frm = document.getElementById("form");
+            frm.onsubmit = function() {
+                let email = document.getElementById("email").value;
+                let password = document.getElementById("password").value;
 
+                if(email === "" || password === ""){
+                    alert("Email Or Password cannot be empty");
+                }
+            }
+
+
+        </script>
 </body>
 </html>
