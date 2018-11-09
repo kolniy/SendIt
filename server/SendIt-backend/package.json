@@ -2,7 +2,7 @@
   "name": "sendit-backend",
   "version": "1.0.0",
   "description": "(send and recieve parcels world-wide)",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node_modules/.bin/nodemon app.js --exec babel-node --"
