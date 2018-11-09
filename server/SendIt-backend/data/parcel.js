@@ -60,3 +60,5 @@ const parcels = [
         status : "On Transit"
     }
 ];
+
+export default parcels;
