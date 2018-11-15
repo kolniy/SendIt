@@ -10,7 +10,7 @@ router.get('/parcels', Parcels.GetAllParcels);
 router.post('/parcels', Parcels.CreateNewParcel);
 
 //Api to get specific parcel delivery order
-router.get('/parcels', Parcels.GetSpecificParcel);
+router.get('/parcels/:parcelid', Parcels.GetSpecificParcel);
 
 // api to get all parcels by specific user
 router.get('/:userid/parcels/', Parcels.ParcelSpecificUsr);

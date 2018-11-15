@@ -59,8 +59,9 @@ CreateNewParcel (req, res) {
 //Api to get specific parcel delivery order
 GetSpecificParcel (req, res)  {
 
-    const id = parseInt(req.params.id, 10);
-    data.map((parcel) => {
+	 const id = parseInt(req.params.parcelid, 10);
+
+	   data.map((parcel) => {
         if (parcel.parcel_id === id){
             return res.status(200).send({
                 success : 'True',
@@ -71,10 +72,9 @@ GetSpecificParcel (req, res)  {
     });
 
     return res.status(404).send({
-        success: 'false',
-        message: 'parcel does not exist',
-      });
-
+    	succes : 'false',
+    	message : 'parcel does not exist',
+    });
 },
 
 //Api to get all parcel by specific user
