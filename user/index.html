@@ -89,7 +89,7 @@
                   <td>25kg</td>
                   <td>On Transit</td>
                   <td> 
-                      <a href="get-details.html" class="icon-tool-tip">
+                      <a class="icon-tool-tip"  onclick="myFunction2()">
                             <i class="fa fa-info-circle icon-color" aria-hidden="true"></i>
                             <span class="tooltiptext">Get Details</span>
                       </a>
@@ -108,7 +108,7 @@
                   <td>50kg</td>
                   <td>Delivered</td>
                   <td>
-                        <a href="get-details.html" class="icon-tool-tip">
+                        <a class="icon-tool-tip"  onclick="myFunction2()">
                                 <i class="fa fa-info-circle icon-color" aria-hidden="true"></i>
                                 <span class="tooltiptext">Get Details</span>
                           </a>
@@ -127,7 +127,7 @@
                   <td>36kg</td>
                   <td>Delivered</td>
                   <td>
-                        <a href="get-details.html" class="icon-tool-tip">
+                        <a class="icon-tool-tip"  onclick="myFunction2()">
                                 <i class="fa fa-info-circle icon-color" aria-hidden="true"></i>
                                 <span class="tooltiptext">Get Details</span>
                           </a>
@@ -146,7 +146,7 @@
                   <td>40kg</td>
                   <td>Delivered</td>
                   <td>
-                        <a href="get-details.html" class="icon-tool-tip">
+                        <a class="icon-tool-tip"  onclick="myFunction2()">
                                 <i class="fa fa-info-circle icon-color" aria-hidden="true"></i>
                                 <span class="tooltiptext">Get Details</span>
                           </a>
@@ -165,7 +165,7 @@
                   <td>67kg</td>
                   <td>On Transit</td>
                   <td>
-                        <a href="get-details.html" class="icon-tool-tip">
+                        <a class="icon-tool-tip"  onclick="myFunction2()">
                                 <i class="fa fa-info-circle icon-color" aria-hidden="true"></i>
                                 <span class="tooltiptext">Get Details</span>
                           </a>
@@ -184,7 +184,7 @@
                   <td>100kg</td>
                   <td>Delivered</td>
                   <td>
-                        <a href="get-details.html" class="icon-tool-tip">
+                        <a class="icon-tool-tip" onclick="myFunction2()">
                                 <i class="fa fa-info-circle icon-color" aria-hidden="true"></i>
                                 <span class="tooltiptext">Get Details</span>
                           </a>
@@ -203,11 +203,11 @@
         </div>
     </section>
 
-<section id="modal" class="modal">
+<section id="modalUp" class="modal">
 
     <div id = "change-des-modal" class="modal-cnts">
             <div class="modal-header">
-              <span class="close">&times;</span>
+              <span id="upModal" class="close">&times;</span>
               <h2>Change Destination</h2>
             </div>
             <div class="modal-body">
@@ -222,6 +222,46 @@
             </div>
     </div>
 
+</section>
+
+<section id="modalDeta" class="modal">
+<div id="modal-Details" class="modal-cnts">
+      <div class="modal-header">
+            <span id="detModal" class="close">&times;</span>
+              <h2>Parcel Details</h2>
+      </div>
+      <div class="info-container">
+                  <h1 id="info-heading" class="intro">Parcel Information</h1>
+                  <div class="padding">
+                          <table class="list">
+                                  <tr>
+                                    <th>Parcel </th>
+                                    <th>Details</th>
+                                  </tr>
+                                  <tr>
+                                    <td>Name : </td>
+                                    <td>X Box Game Pad</td>
+                           <tr>
+                             <td>Price : </td>
+                               <td>#5000</td>
+                              </tr>
+                          <tr>
+                              <td>Weight</td>
+                                    <td>30kg</td>
+                           </tr>
+                           <tr>
+                             <td>Destination : </td>
+                               <td>Abuja Nigeria</td>
+                          </tr>
+                       <tr>
+                           <td>Pick Up Location : </td>
+                           <td>Wuse Zone 6, Abuja Nigeria</td>
+                       </tr>
+                   </table>
+                   </div>
+          </div>
+
+      </div>
 </section>
 
         <footer>

@@ -16,19 +16,30 @@ function closeNav() {
 
 // modal code gotten from w3dchools website
 
-// Get the modal
-var modal = document.getElementById('modal');
+// Get the update modal
+var modalUpdate = document.getElementById('modalUp');
 
 function myFunction(){
-  modal.style.display = "block";
+  modalUpdate.style.display = "block";
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// get the details modal
+var modalDet = document.getElementById('modalDeta');
+
+function myFunction2(){
+ modalDet.style.display = "block";
+}
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
+var clseBtn1 = document.getElementById('upModal');
+var clseBtn2 = document.getElementById("detModal");
+
+clseBtn1.onclick = function(){
+    modalUpdate.style.display = "none";
+}
+
+clseBtn2.onclick = function(){
+    modalDet.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
