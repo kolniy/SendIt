@@ -4,31 +4,30 @@
   "description": "(send and recieve parcels world-wide)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start_dev": "node_modules/.bin/nodemon app.js --exec babel-node --",
-    "start": "babel-node ./server/app.js"
+    "start": "node_modules/.bin/nodemon app.js --exec babel-node --"
+  },
+  "engines":{
+    "node": "8.11.4"
   },
   "author": " (kolawole olaniyi)",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1"
+    "babel-cli": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "body-parser": "1.18.3",
+    "express": "4.16.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.6",
-    "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.1.6",
-    "@babel/register": "^7.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1",
-    "nodemon": "^1.18.6"
+    "@babel/cli": "7.1.5",
+    "@babel/core": "7.1.6",
+    "@babel/node": "7.0.0",
+    "@babel/preset-env": "7.1.6",
+    "@babel/register": "7.0.0",
+    "babel-eslint": "10.0.1",
+    "eslint": "5.8.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.11.1",
+    "nodemon": "1.18.6"
   }
 }
