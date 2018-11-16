@@ -4,7 +4,8 @@
   "description": "(send and recieve parcels world-wide)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node_modules/.bin/nodemon app.js --exec babel-node --"
+    "start_dev": "node_modules/.bin/nodemon app.js --exec babel-node --",
+    "start": "babel-node ./server/app.js"
   },
   "author": " (kolawole olaniyi)",
   "license": "ISC",
