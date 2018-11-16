@@ -363,14 +363,51 @@ margin-left: 50px;
     margin-top: 80px;
 }
 
-.item-container{
-    float:left;
-    margin: 5px 10% 5px 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 220px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+.card-contents a{
+    text-decoration: none;
 }
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.num-dis h3 {
+    color: #0066ff;
+    font-size: 55px;
+}
+
+@media only screen and (max-width: 600px) {
+    .column {
+        margin-bottom: 25px;
+    }
+}
+
+.caption p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.num-dis h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: auto;
+  }
+
+  .column {
+    flex-basis: 50%;
+  }
+  
+
 /** modal code from w3schools website */
 .modal{
     display: none; 
