@@ -1,10 +1,12 @@
 let dotMenu = document.getElementById("dot-menu");
 
+
 /* display side navigation by increasing the width*/
+
 dotMenu.onclick = function(){
     let verMenu = document.getElementById("ul-list");
-    verMenu.style.width = "25%";
-    document.getElementById("main-page-contents").style.marginLeft = "250px";
+        verMenu.style.width = "25%";
+        document.getElementById("main-page-contents").style.marginLeft = "25%";
 }
 
 /* Set the width of the side navigation to 0 */
@@ -14,7 +16,7 @@ function closeNav() {
     document.getElementById("main-page-contents").style.marginLeft = "0";
 }
 
-// modal code gotten from w3dchools website
+// modal code gotten from w3cshools website
 
 // Get the update modal
 var modalUpdate = document.getElementById('modalUp');
@@ -44,7 +46,7 @@ clseBtn2.onclick = function(){
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modalUpdate) {
+     modalUpdate.style.display = "none";
     }
 }
